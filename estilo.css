@@ -79,7 +79,12 @@ header {
   width: 500px;
   margin-bottom: 1rem;
 }
-
+.banner img{
+    width: 80%;
+    height: auto;
+    margin-bottom: 1rem;
+    align-items: center;
+}
 .slogan {
   font-size: 2rem;
   margin-bottom: 1rem;

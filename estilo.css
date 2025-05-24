@@ -1,0 +1,209 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1a1a1a;
+  background: #f7f7f7;
+  line-height: 1.6;
+}
+
+a {
+  color: #d05412;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0a0a23;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header */
+header {
+  background: #e6f1eb;
+  color: #f7f7f7;
+  padding: 1rem 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: #181818;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #d05412;
+}
+
+/* Home */
+.home-section {
+  background: #ffffff;
+  color: #0a0a23;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-logo {
+  width: 500px;
+  margin-bottom: 1rem;
+}
+
+.slogan {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #0a0a23;
+}
+
+.cta-buttons {
+  margin: 1rem 0;
+}
+
+.cta-buttons .btn {
+  background: #d05412;
+  color: #ffffff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+  margin: 0.5rem;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.cta-buttons .btn:hover {
+  background: #0a0a23;
+}
+
+/* Sections */
+section {
+  padding: 4rem 0;
+  background: #f7f7f7;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #0a0a23;
+}
+
+/* Grids */
+.services-grid, .products-grid, .portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.service-item, .product-item, .portfolio-item {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  transition: 0.3s;
+  border: 1px solid #e0e0e0;
+}
+
+.service-item:hover, .product-item:hover, .portfolio-item:hover {
+  box-shadow: 0 4px 12px rgba(10, 10, 35, 0.2);
+}
+
+.service-item span {
+  font-size: 3rem;
+  color: #d05412;
+}
+
+/* Contact */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+form input, form textarea {
+  padding: 1rem;
+  border: 1px solid #1a1a1a;
+  border-radius: 5px;
+  background: #ffffff;
+}
+
+form button {
+  background: #d05412;
+  color: #ffffff;
+  border: none;
+  padding: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+form button:hover {
+  background: #0a0a23;
+}
+
+/* Footer */
+footer {
+  background: #0a0a23;
+  color: #f7f7f7;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.footer-links, .footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footer-links a, .footer-social a {
+  color: #f7f7f7;
+  font-size: 0.9rem;
+}
+
+.footer-links a:hover, .footer-social a:hover {
+  color: #d05412;
+}
+
+.footer-copy {
+  font-size: 0.8rem;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .header-container, .home-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
